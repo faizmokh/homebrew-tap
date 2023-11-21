@@ -9,7 +9,6 @@ cask "tomato" do
     name "Tomato"
     desc "a simple pomodoro timer for macos menu bar"
     homepage "https://github.com/faizmokh/tomato"
-    license "MIT"
     
     app "Tomato.app"
   end
