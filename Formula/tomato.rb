@@ -7,6 +7,7 @@ class Tomato < Formula
     url "https://github.com/faizmokh/tomato/releases/download/1.0/Tomato.app.zip"
     sha256 "2b2b5199290bcc66e3033d829e406b9e324bdf111f462a038d354fc18c2d6cca"
     license "MIT"
+    version "1.0"
     
     def install
         system "unzip", "Tomato.app.zip"
