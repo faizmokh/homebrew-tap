@@ -10,8 +10,7 @@ class Tomato < Formula
     version "1.0"
     
     def install
-        system "unzip", "Tomato.app.zip"
-        system "mv", "Tomato.app", "/Applications"
+        prefix.install "Tomato.app"
     end
   
     test do
