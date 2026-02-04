@@ -17,6 +17,7 @@ class Wdyd < Formula
   end
 
   test do
-    system "#{bin}/wdyd", "--help"
+    # TUI app with no --help/--version flags, just verify binary exists
+    assert_predicate bin/"wdyd", :exist?
   end
 end
