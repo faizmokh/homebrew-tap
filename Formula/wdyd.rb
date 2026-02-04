@@ -10,10 +10,10 @@ class Wdyd < Formula
   sha256 "583029b8454f0448062a92ed4ca9790e995e082998c75056e83eb163eec72d45"
   license "MIT"
 
-  depends_on "python@3.11"
+  depends_on "python"
 
   def install
-    system "python3.11", "-m", "pip", "install", "--prefix=#{prefix}", "."
+    system "python3", "-m", "pip", "install", "--prefix=#{prefix}", "."
   end
 
   test do
