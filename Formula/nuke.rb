@@ -10,7 +10,7 @@ class Nuke < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/faizmokh/nuke/releases/download/v0.1.0/nuke_0.1.0_darwin_amd64.tar.gz"
-    sha256 "35de1a3c5138dd23003d30b4cdc684e9238cbf827166601f8bfa09b218729907"
+    sha256 "4f123731aa0b02010cc4b77c9bb8da52fbecb41be351d62cbea6175840402048"
 
     define_method(:install) do
       bin.install "nuke"
@@ -18,7 +18,7 @@ class Nuke < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/faizmokh/nuke/releases/download/v0.1.0/nuke_0.1.0_darwin_arm64.tar.gz"
-    sha256 "f36e466498bfa614079aa594f4747c0c06dc7f440e2f6cca0a313eb7d2883852"
+    sha256 "d5ba292414dc7e4167573126b60d2fb37309ec7d3c906869954cdb5811037076"
 
     define_method(:install) do
       bin.install "nuke"
