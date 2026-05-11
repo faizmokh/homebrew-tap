@@ -5,20 +5,20 @@
 class Nuke < Formula
   desc "Clean up Xcode DerivedData and Swift Package Manager caches"
   homepage "https://github.com/faizmokh/nuke"
-  version "0.1.0"
+  version "0.2.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/faizmokh/nuke/releases/download/v0.1.0/nuke_0.1.0_darwin_amd64.tar.gz"
-    sha256 "4f123731aa0b02010cc4b77c9bb8da52fbecb41be351d62cbea6175840402048"
+    url "https://github.com/faizmokh/nuke/releases/download/v0.2.0/nuke_0.2.0_darwin_amd64.tar.gz"
+    sha256 "968cb328eaf89c155d8e532928005402a7ee66ff135ca36601207f0eb8a79571"
 
     define_method(:install) do
       bin.install "nuke"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/faizmokh/nuke/releases/download/v0.1.0/nuke_0.1.0_darwin_arm64.tar.gz"
-    sha256 "d5ba292414dc7e4167573126b60d2fb37309ec7d3c906869954cdb5811037076"
+    url "https://github.com/faizmokh/nuke/releases/download/v0.2.0/nuke_0.2.0_darwin_arm64.tar.gz"
+    sha256 "3e18bbdba99b8ee7019c3518ad698cc18ed29beea59e3439fffe8a046568ae77"
 
     define_method(:install) do
       bin.install "nuke"
