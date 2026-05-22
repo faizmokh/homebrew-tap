@@ -5,20 +5,20 @@
 class Nuke < Formula
   desc "Clean up Xcode and iOS development caches"
   homepage "https://github.com/faizmokh/nuke"
-  version "0.4.0"
+  version "1.0.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/faizmokh/nuke/releases/download/v0.4.0/nuke_0.4.0_darwin_amd64.tar.gz"
-    sha256 "9c368d5bdc691c8f3310c99fe3bdb52d19094672d7a8d9b96c15166ae2642b85"
+    url "https://github.com/faizmokh/nuke/releases/download/v1.0.0/nuke_1.0.0_darwin_amd64.tar.gz"
+    sha256 "253a51059b79fb18b08995fb7511e745616e88ff44b585ecd964fd7d000d6292"
 
     define_method(:install) do
       bin.install "nuke"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/faizmokh/nuke/releases/download/v0.4.0/nuke_0.4.0_darwin_arm64.tar.gz"
-    sha256 "e1a40168ace78023ae6a04aa24e71c7be3366d896be1095ed0c03470fe2360c0"
+    url "https://github.com/faizmokh/nuke/releases/download/v1.0.0/nuke_1.0.0_darwin_arm64.tar.gz"
+    sha256 "3e80c895d89a21baca9901006d22c6ce6138fa5137488214ad258c690e2a096d"
 
     define_method(:install) do
       bin.install "nuke"
