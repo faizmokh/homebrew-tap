@@ -5,21 +5,21 @@
 class Skmr < Formula
   desc "Manage agent skills across Codex, OpenCode, and Pi"
   homepage "https://github.com/faizmokh/skmr"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/faizmokh/skmr/releases/download/v0.5.1/skmr_0.5.1_darwin_amd64.tar.gz"
-      sha256 "76ad936a0f305ba9985813007f209ebe741bd9413380c4bf7d37ca31b4ba0ba4"
+      url "https://github.com/faizmokh/skmr/releases/download/v0.6.0/skmr_0.6.0_darwin_amd64.tar.gz"
+      sha256 "b303f4d137da826e4c12166ebb8328febd51d64124bbfed7a415f68a1e3288f7"
 
       define_method(:install) do
         bin.install "skmr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/faizmokh/skmr/releases/download/v0.5.1/skmr_0.5.1_darwin_arm64.tar.gz"
-      sha256 "0ef55a0cc9af34d0f411919059e04310ca355a378279a7ed0f217a491cd8dea9"
+      url "https://github.com/faizmokh/skmr/releases/download/v0.6.0/skmr_0.6.0_darwin_arm64.tar.gz"
+      sha256 "03b42d5d3da5c5fb4b30b00ad96c463c9e316b1d1280309d16bb4b4abff03e8a"
 
       define_method(:install) do
         bin.install "skmr"
@@ -29,15 +29,15 @@ class Skmr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/faizmokh/skmr/releases/download/v0.5.1/skmr_0.5.1_linux_amd64.tar.gz"
-      sha256 "7b48241f6ac7892b25951de021f1db6c6109b3c742cea383a873890b597daac3"
+      url "https://github.com/faizmokh/skmr/releases/download/v0.6.0/skmr_0.6.0_linux_amd64.tar.gz"
+      sha256 "89fa2db7de177eda9e43e12a016b8e677bfd4568c5a89d7e3f90c15ae5a356c5"
       define_method(:install) do
         bin.install "skmr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/faizmokh/skmr/releases/download/v0.5.1/skmr_0.5.1_linux_arm64.tar.gz"
-      sha256 "ad7d72119d955ecf534ba4af0b015bc6bd0dbc0bd1664c84e7a3a65566139c01"
+      url "https://github.com/faizmokh/skmr/releases/download/v0.6.0/skmr_0.6.0_linux_arm64.tar.gz"
+      sha256 "977d742c15e8471f81372b04422530a305633a7e94fbe7ca01897b81ec88e084"
       define_method(:install) do
         bin.install "skmr"
       end
